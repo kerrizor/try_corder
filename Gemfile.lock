@@ -1,0 +1,24 @@
+PATH
+  remote: .
+  specs:
+    try_corder (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (9.1.0)
+    minitest (5.10.3)
+    rake (10.5.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.16)
+  byebug
+  minitest (~> 5.0)
+  rake (~> 10.0)
+  try_corder!
+
+BUNDLED WITH
+   1.16.0
