@@ -5,7 +5,7 @@ module TryCorder
     include Singleton
 
     def self.count(klass, unparsed_source_string)
-      TryCorder.instance.count(klass, unparsed_source_string)
+      TryCorder::Recorder.instance.count(klass, unparsed_source_string)
     end
 
     def count(klass, unparsed_source_string)

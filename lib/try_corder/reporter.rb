@@ -1,10 +1,6 @@
 module TryCorder
   class Reporter
     def self.report
-      puts TryCorder::Reporter.instance.report
-    end
-
-    def report
       output = "\n\n" + divider
 
       TryCorder::Recorder.instance.counter.each do |k,v|
@@ -23,10 +19,12 @@ module TryCorder
 
       output << divider
 
-      output
+      puts output
     end
 
-    def divider
+    private
+
+    def self.divider
       "=====================\n\n"
     end
   end
