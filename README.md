@@ -29,7 +29,7 @@ Include the reporting output in your rspec helper file like so:
 ```ruby
 RSpec.configure do |config|
   config.after(:suite) do
-    TryCorder.report
+    TryCorder::Reporter.report
   end
 end
 ```
