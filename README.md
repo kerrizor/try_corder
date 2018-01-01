@@ -34,6 +34,50 @@ RSpec.configure do |config|
 end
 ```
 
+The gem will print out usage numbers at the end of your RSpec run.
+
+```
+💗  ➜  rspec ./spec/models/user_spec.rb
+Run options: include {:focus=>true}
+
+All examples were filtered out; ignoring {:focus=>true}
+
+Randomized with seed 15281
+.........................................................................................................................................................................................................................................................
+
+=====================
+
+User
+--------------------
+app/models/user.rb:338:: 129
+app/models/user.rb:759:: 421
+app/models/user.rb:184:: 6
+
+
+Total uses of :try for this class: 556
+
+Organization
+--------------------
+app/models/user.rb:338:: 129
+
+
+Total uses of :try for this class: 129
+
+RSpec::Mocks::Double
+--------------------
+app/models/user.rb:604:: 1
+
+
+Total uses of :try for this class: 1
+
+=====================
+
+Finished in 37.44 seconds (files took 11.09 seconds to load)
+249 examples, 0 failures
+
+Randomized with seed 15281
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
